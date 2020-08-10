@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo ** Install Phase **
+      - export LC_ALL=en_US.UTF-8
+      - export LANG=en_US.UTF-8
+      - sudo yum update -y
+      - sudo yum install -y git gcc-c++ make
+      - curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -
+      - sudo yum install -y nodejs
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - USE_CHROME=1 npm test
