@@ -2,15 +2,8 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - echo Install Phase
-      - export LC_ALL=en_US.UTF-8
-      - export LANG=en_US.UTF-8
-      - yum update -y
-      - yum install -y git gcc-c++ make
-      - curl -sL https://rpm.nodesource.com/setup_12.x | bash -
-      - yum install -y nodejs
-      - echo Install Phase Finished
+    runtime-versions:
+      nodejs: 10.x
   pre_build:
     commands:
       - npm install
