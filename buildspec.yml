@@ -1,17 +1,15 @@
 version: 0.2
 
-run-as: ec2-user
-
 phases:
   install:
     commands:
       - echo Install Phase
       - export LC_ALL=en_US.UTF-8
       - export LANG=en_US.UTF-8
-      - sudo yum update -y
-      - sudo yum install -y git gcc-c++ make
-      - curl -sL https://rpm.nodesource.com/setup_12.x | sudo -E bash -
-      - sudo yum install -y nodejs
+      - yum update -y
+      - yum install -y git gcc-c++ make
+      - curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+      - yum install -y nodejs
       - echo Install Phase Finished
   pre_build:
     commands:
