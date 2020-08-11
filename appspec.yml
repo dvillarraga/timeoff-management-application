@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /timeoff-management-application/
+    destination: /home/ec2-user/timeoff-management-application/
 hooks:
   ApplicationStop:
     - location: scripts/application_stop
