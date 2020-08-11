@@ -1,6 +1,6 @@
 #!/bin/bash
 # vars
-project_location="/timeoff-management-application"
+project_location="/home/ec2-user/timeoff-management-application"
 
 # deleting current version
 sudo rm -rf "$project_location"

@@ -1,6 +1,6 @@
 #!/bin/bash
 # vars
-project_location="/timeoff-management-application"
+project_location="/home/ec2-user/timeoff-management-application"
 
 # creating cache and log folders
 cd $project_location
