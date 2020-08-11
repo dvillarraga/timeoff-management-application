@@ -1,0 +1,7 @@
+#!/bin/bash
+# vars
+project_location="/timeoff-management-application"
+
+# deleting current version
+sudo rm -rf "$project_location"
+sudo mkdir -p "$project_location"
