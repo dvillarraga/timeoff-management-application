@@ -7,4 +7,4 @@ cd $project_location
 
 # starting services
 sudo npm install
-sudo npm start
+sudo pm2 --name TimeOffApplication start npm -- start
